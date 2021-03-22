@@ -3,9 +3,6 @@
 Ubuntu镜像配置文件位于`/etc/apt/sources.list`。
 
 1. 使用命令修改
-    <!-- ```bash
-    sudo sed -i.bak 's/archive.ubuntu.com/mirrors.pku.edu.cn/g' /etc/apt/sources.list
-    ``` -->
     ```bash
     sudo sed -ri.bak -e 's/\/\/.*?(archive.ubuntu.com|mirrors.*?)\/ubuntu/\/\/mirrors.pku.edu.cn\/ubuntu/g' -e '/security.ubuntu.com\/ubuntu/d' /etc/apt/sources.list
     ```
