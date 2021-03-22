@@ -3,10 +3,13 @@
 Ubuntu镜像配置文件位于`/etc/apt/sources.list`。
 
 1. 使用命令修改
-    ```bash
+    <!-- ```bash
     sudo sed -i.bak 's/archive.ubuntu.com/mirrors.pku.edu.cn/g' /etc/apt/sources.list
+    ``` -->
+    ```bash
+    sudo sed -ri.bak -e 's/\/\/.*?(archive.ubuntu.com|mirrors.*?)\/ubuntu/\/\/mirrors.pku.edu.cn\/ubuntu/g' -e '/security.ubuntu.com\/ubuntu/d' /etc/apt/sources.list
     ```
-    注：该命令表示将`archive.ubuntu.com`替换为`mirrors.pku.edu.cn`。根据不同的时区，被替换的内容可能不是`archive.ubuntu.com`，可通过查看`/etc/apt/sources.list`确定。
+    注：该命令表示将`archive.ubuntu.com`和`mirrors.*`替换为`mirrors.pku.edu.cn`，并把`security.ubuntu.com`删除。
 
     修改文件后需要更新索引：
     ```bash
