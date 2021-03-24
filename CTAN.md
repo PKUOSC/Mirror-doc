@@ -12,7 +12,7 @@ tlmgr option repository https://mirrors.pku.edu.cn/CTAN/systems/texlive/tlnet
 如果只需要临时切换，可以用如下命令：
 
 ```bash
-tlmgr update --all --repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+tlmgr update --all --repository https://mirrors.pku.edu.cn/CTAN/systems/texlive/tlnet
 ```
 
 
