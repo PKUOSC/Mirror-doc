@@ -4,7 +4,7 @@ CentOS 7镜像配置文件位于`/etc/yum.repos.d/CentOS-Base.repo`。
 1. 使用命令修改
     ```bash
     sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
-              -e 's|^#baseurl=http://mirror.centos.org/$contentdir|baseurl=https://mirrors.pku.edu.cn/centos|g' \
+              -e 's|^#baseurl=http://mirror.centos.org|baseurl=https://mirrors.pku.edu.cn|g' \
               -i.bak \
               /etc/yum.repos.d/CentOS-Base.repo
     ```
@@ -19,7 +19,7 @@ CentOS 7镜像配置文件位于`/etc/yum.repos.d/CentOS-Base.repo`。
 
     可通过如下命令直接下载配置文件并替换原有的`/etc/yum.repos.d/CentOS-Base.repo`：
     ```bash
-    sudo wget http://mirrors.pku.edu.cn/repoconfig/centos7/CentOS-Base.repo -O /etc/yum.repos.d/CentOS-Base.repo
+    sudo curl http://mirrors.pku.edu.cn/repoconfig/centos7/CentOS-Base.repo -o /etc/yum.repos.d/CentOS-Base.repo
     ```
 
     ```unix-conf
