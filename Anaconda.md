@@ -14,6 +14,7 @@
     custom_channels:
         conda-forge: https://mirrors.pku.edu.cn/anaconda/cloud
         pytorch: https://mirrors.pku.edu.cn/anaconda/cloud
+        bioconda: https://mirrors.pku.edu.cn/anaconda/cloud
     ```
 
     修改后执行下述命令以清除缓存：

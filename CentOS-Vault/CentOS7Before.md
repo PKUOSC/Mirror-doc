@@ -5,8 +5,8 @@
 1. 使用命令修改
 ```
 mirrorver=7.9.2009  #这里使用上面命令获取到的小版本号
-sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
-          -e 's|^#baseurl=http://mirror.centos.org/centos/\$releasever|baseurl=https://mirrors.pku.edu.cn/centos-vault/$mirrorver|g' \
+sudo sed -e "s|^mirrorlist=|#mirrorlist=|g" \
+          -e "s|^#baseurl=http://mirror.centos.org/centos/\$releasever|baseurl=https://mirrors.pku.edu.cn/centos-vault/$mirrorver|g" \
           -i.bak \
           /etc/yum.repos.d/CentOS-*.repo
 ```
