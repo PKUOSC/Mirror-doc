@@ -3,7 +3,7 @@
 编辑文件`/etc/pacman.d/mirrorlist`，在开头插入
 ```unix-conf
 ## China
-Server = http://mirrors.pku.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.pku.edu.cn/archlinux/$repo/os/$arch
 ```
 以添加并启用北大镜像源。
 
