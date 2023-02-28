@@ -1,0 +1,25 @@
+## 镜像配置
+
+编辑文件`/etc/pacman.d/mirrorlist`，在开头插入：
+
+```unix-conf
+## China
+Server = https://mirrors.pku.edu.cn/manjaro/$repo/os/$arch
+```
+
+以添加并启用北大镜像源。
+
+修改文件`/etc/pacman.d/mirrorlist`后，使用Manjaro的软件包管理器更新：
+
+```bash
+pamac checkupdates
+pamac update
+```
+
+由于Manjaro基于Arch Linux，也可以使用Arch Linux的pacman命令更新：
+
+```bash
+pacman -Syyu
+```
+
+以强制刷新软件包列表。
