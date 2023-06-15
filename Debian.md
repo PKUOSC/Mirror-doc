@@ -15,8 +15,8 @@ deb http://mirrors.pku.edu.cn/debian/ {debian_codename}-updates main contrib non
 deb http://mirrors.pku.edu.cn/debian/ {debian_codename}-backports main contrib non-free
 # deb-src http://mirrors.pku.edu.cn/debian/ {debian_codename}-backports main contrib non-free
 
-deb http://mirrors.pku.edu.cn/debian-security {debian_codename}-security main contrib non-free
-# deb-src http://mirrors.pku.edu.cn/debian-security {debian_codename}-security main contrib non-free
+deb http://mirrors.pku.edu.cn/debian-security {debian_codename}{debian_security} main contrib non-free
+# deb-src http://mirrors.pku.edu.cn/debian-security {debian_codename}{debian_security} main contrib non-free
 ```
 
 修改文件后需要更新索引：
